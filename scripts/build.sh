@@ -20,7 +20,6 @@ cp src/static/css/webfont.css build/static/css/webfont.css
 cp src/templates/index.html build/index.html
 cp -rf src/static/conf build/static
 
-
 src/static/conf/PYKL_Introduction_For_Advertiser.pdf
 
 echo "\n----- Done"
