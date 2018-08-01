@@ -17,6 +17,7 @@ gulp img:minify
 cp src/static/css/normalize.css build/static/css/normalize.css
 cp src/static/css/webfont.css build/static/css/webfont.css
 cp src/templates/index.html build/index.html
+cp src/static/conf/googlea8f650425de405c5.html build/googlea8f650425de405c5.html
 cp -rf src/static/conf build/static
 
 echo "\n----- Done"
