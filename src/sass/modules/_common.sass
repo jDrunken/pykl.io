@@ -1,0 +1,20 @@
+.sr-only
+  +abs()
+  +t()
+  +r()
+  +z(z('below'))
+  +w(1px)
+  +h(1px)
+  +fs(1px)
+  +lh(1)
+  +m()
+  +hidden()
+
+.breakpoint-md
+  +block()
+  +min-md()
+    +inline()
+
+.breakpoint-sm-lg
+  @media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg)
+    +block()

@@ -1,0 +1,50 @@
+.pykl-header
+  +fix()
+  +z(100)
+  +t()
+  +l()
+  +w()
+  +h($mb-height)
+  +trans(background-color 200ms)
+  .pykl
+    +inblock()
+    +w(74px)
+    +h($mb-height)
+    +my()
+    +ml(-1px)
+    +bg('../../static/images/logo-pykl.svg')
+    +bgs(contain)
+    text-indent: -9999px
+  .button--icon.--menu
+    +rel()
+    +l(13px)
+
+  &.pykl--clone
+    +bgc($dark)
+    z-index: 100
+    [class^='pykl--']
+      +trans(background-color 200ms)
+    &:first-child
+      +z(200)
+
+  &.pykl--stick
+    +bgc($white !important)
+    +shadow($shadow-header)
+    z-index: 200
+
+  &.pykl--unstick
+    z-index: 200
+
+.pykl-header
+  +min-md()
+    +h($dk-height)
+    .pykl
+      +w(130px)
+      +h($dk-height)
+    .button--icon
+      +none()
+
+
+
+
+

@@ -1,0 +1,54 @@
+/* CircularStd */
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Book'),
+    url('../fonts/CircularStd-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Circular Std Book Italic'),
+    url('../fonts/CircularStd-BookItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Circular Std Bold'),
+    url('../fonts/CircularStd-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Circular Std Bold Italic'),
+    url('../fonts/CircularStd-BoldItalic.woff') format('woff');
+}
+
+
+/* SpoqaHanSans */
+@font-face {
+  font-family: 'SpoqaHanSans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SpoqaHanSansRegular'),
+    url('../fonts/SpoqaHanSansRegular.ttf') format('ttf'),
+    url('../fonts/SpoqaHanSansRegular.woff') format('woff'),
+    url('../fonts/SpoqaHanSansRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SpoqaHanSans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('SpoqaHanSansBold'),
+    url('../fonts/SpoqaHanSansBold.ttf') format('ttf'),
+    url('../fonts/SpoqaHanSansBold.woff') format('woff')
+    url('../fonts/SpoqaHanSansBold.woff2') format('woff2');
+}

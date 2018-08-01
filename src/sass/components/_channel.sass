@@ -1,0 +1,53 @@
+#network
+  .section__header
+    +pb()
+  .card__item
+    +mb($medium)
+  .card__item,
+  .channel__title
+    +px(20px)
+    +min-sm()
+      +px(10px)
+  .card__list
+    +mx(-20px)
+    +min-sm()
+      +mx(-10px)
+  .container
+    +px(20px)
+    +min-sm()
+      +px(10px)
+
+.channel
+  &__header
+    @extend .row
+    +py(40px)
+    +mx(-10px)
+    +max-sm()
+      +pb(24px)
+      +mx(-20px)
+  &__title
+    @extend .col-sm-12, %text-base, %text-title
+
+
+.card
+  &.--channel
+    a
+      @extend %card-horizontal, %card-channel
+    .card__img
+      +w(83px)
+      +h(83px)
+      img
+        +w()
+        +h(auto)
+    dl
+      @extend %ui-small, %ui-smoke-2
+      +y-center()
+      +mt($small)
+      dt
+        +mr($tiny)
+    +hover()
+      a
+        +shadow($shadow-dark-hover)
+      .card__img
+        img
+          transform: $scale

@@ -1,0 +1,177 @@
+{
+  "lang": "en",
+  "head": {
+    "title": "PYKL"
+  },
+  "aria": {
+    "button": {
+      "menu": "Open the menu",
+      "button": "Close the menu",
+      "section": {
+        "network": {
+          "title": "Channel",
+          "youtube": "Youtube",
+          "steemit": "Steemit"
+        }
+      }
+    },
+    "gnb": {
+      "home": "Home",
+      "network": "Network:",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "srOnly": {
+    "nav": "Menu",
+    "portfolio": "Porfolio"
+  },
+  "intro": {
+    "heading": "Pykl Network is the most influential Crypto Marketing Network in South Korea with a pool of cryptocurrency content creators.",
+    "text": {
+      "item1": "WE UTILIZE a pool of content creators from Youtube, Steemit, Afreeca, and blog (over 880,000 subscribers)",
+      "item2": "WE RECOMMEND an appropriate way to brand and to advertise in South Korea based on the characteristic of a project",
+      "item3": "WE COLLABORATE with numerous of marketing companies to provide a marketing strategy for the events such as ICO pre-sale, exchange listing, mainnet launch, and conferences"
+    }
+  },
+  "network": {
+    "youtube": {
+      "subscriber": "Subscribers",
+      "card1": {
+        "title": "KillaWhale",
+        "subscriber": "36,728",
+        "url": "https://www.youtube.com/channel/UCFYXE2w60jhpCO9uKvjZvVQ/featured"
+      },
+      "card2": {
+        "title": "COINsight",
+        "subscriber": "24,957",
+        "url": "https://www.youtube.com/channel/UCZWvx1PFmcTLiGJX3FTcCBA"
+      },
+      "card3": {
+        "title": "Bit-Boy 쎄시봉",
+        "subscriber": "11,415",
+        "url": "https://www.youtube.com/channel/UCCho7n8zvINvLZgZI3osFGQ"
+      },
+      "card4": {
+        "title": "YES MEN",
+        "subscriber": "13,786",
+        "url": "https://www.youtube.com/channel/UCsrenJyjKnZDHnuNpQLgPUA"
+      },
+      "card5": {
+        "title": "CONAM TV",
+        "subscriber": "2,339",
+        "url": "https://www.youtube.com/c/conamtv"
+      },
+      "card6": {
+        "title": "BLOCK INFO",
+        "subscriber": "18,581",
+        "url": "https://www.youtube.com/channel/UCiqTJXq5QFw5lNnUueqBqQQ"
+      }
+    },
+    "steemit": {
+      "follower": "Followers",
+      "card1": {
+        "title": "@indend007",
+        "follower": "3,306",
+        "url": "https://steemit.com/@indend007"
+      },
+      "card2": {
+        "title": "@musicholic  ",
+        "follower": "2,854",
+        "url": "https://steemit.com/@musicholic"
+      },
+      "card3": {
+        "title": "@boostyou ",
+        "follower": "1,925",
+        "url": "https://steemit.com/@boostyou"
+      },
+      "card4": {
+        "title": "@kim066 ",
+        "follower": "5,018",
+        "url": "https://steemit.com/@kim066"
+      },
+      "card5": {
+        "title": "@segyepark ",
+        "follower": "2,088",
+        "url": "https://steemit.com/@segyepark"
+      },
+      "card6": {
+        "title": "@journalist.yoo",
+        "follower": "501",
+        "url": "https://steemit.com/@journalist.yoo"
+      },
+      "card7": {
+        "title": "@virus707",
+        "follower": "6,155",
+        "url": "https://steemit.com/@virus707"
+      }
+    }
+  },
+  "portfolio": {
+    "card1": {
+      "title": "Daybit Exchange",
+      "url": "https://daybit.com/"
+    },
+    "card2": {
+      "title": "Scatter",
+      "url": "https://get-scatter.com/"
+    },
+    "card3": {
+      "title": "Waves Platform",
+      "url": "https://wavesplatform.com/"
+    },
+    "card4": {
+      "title": "Everipedia",
+      "url": "https://everipedia.org/"
+    },
+    "card5": {
+      "title" : "Red Pulse",
+      "url": "https://www.redpulse.com/"
+    },
+    "card6": {
+      "title" : "IOSToken",
+      "url": "https://iost.io/"
+    },
+    "card7": {
+      "title": "Chaince",
+      "url": "https://chaince.com/"
+    },
+    "card8": {
+      "title": "EOSYS",
+      "url": "https://eosauthority.com/space/"
+    },
+    "card9": {
+      "title": "Greymess",
+      "url": "https://greymass.com/"
+    }
+  },
+  "process": {
+    "step1": {
+      "title": "Kick-Off",
+      "description": "Obtaining an AD order from a company"
+    },
+    "step2": {
+      "title": "Planning",
+      "description": "Planning the content and finding a right influencer"
+    },
+    "step3": {
+      "title": "Contract",
+      "description": "Signing a contract"
+    },
+    "step4": {
+      "title": "Producing",
+      "description": "Production of the related content"
+    },
+    "step5": {
+      "title": "On Air",
+      "description": "Execution of the AD and balancing the account"
+    }
+  },
+  "contact": {
+    "heading": "We have a pool of marketing experts <span aria-hidden='true' class='breakpoint-sm-lg'></span>who will aid your success in South Korea,<br/>Be part of Pykl Network.",
+    "button": {
+      "dark": "Download a proposal",
+      "ghost": "Marketing request form"
+    }
+  }
+}

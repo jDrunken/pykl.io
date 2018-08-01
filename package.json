@@ -1,0 +1,24 @@
+{
+  "name": "pykl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "build": "sh scripts/build.sh",
+    "deploy": "sh scripts/deploy.sh"
+  },
+  "keywords": [],
+  "author": "Roh Woohyeon ",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.9.2",
+    "static-i18n": "^0.2.2"
+  },
+  "dependencies": {}
+}

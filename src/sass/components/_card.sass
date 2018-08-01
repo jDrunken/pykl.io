@@ -1,0 +1,142 @@
+$card-br: 2px
+$card-px: $medium
+$card-py: 20px
+
+$scale: scale(1.075)
+$scale-portfolio: scale(1.05)
+$trans-scale: transform 280ms ease-in-out
+
+
+/** @organism Card
+  *
+  * 1. structure
+  *    ul.card__list ------------------ row
+  *      li.card__item ---------------- col
+  *        article.card.--channel ----- card-type
+  *          a[target='_blank'] ------- card-container
+  *            .card__img ------------- card-img
+  *              img
+  *            .card__content --------- card-content
+  *              h1.card__title
+  *              ...
+  */
+
+%card
+  +block()
+  +w()
+  +br($card-br)
+  +bgc($white)
+  +hidden()
+
+%card-horizontal
+  +flex()
+
+%card-channel
+  +x-center()
+  +ai(stretch)
+  +shadow($shadow-dark)
+  +trans(box-shadow 300ms 50ms)
+
+%card-img
+  +sh(0)
+  +gr(0)
+  +hidden()
+  img
+    +w(100%)
+    +h(auto)
+    +trans($trans-scale)
+  +hover()
+    img
+      transform: $scale
+
+%card-content
+  +sh(0)
+  +gr(1)
+  +px($card-px)
+  +py($card-py)
+
+.card
+  &__list
+    @extend .row
+  &__item
+    #network &
+      @extend .col-sm-12, .col-md-6, .col-lg-4
+    #portfolio &
+      @extend .col-sm-12, .col-md-6, .col-lg-3
+
+
+.card
+  > a
+    @extend %card
+  &__img
+    @extend %card-img
+  &__content
+    @extend %card-content
+  &__title
+    @extend %text-base, %text-title
+
+
+
+
+
+
+// .card
+//   +bgc($white)
+//   +br(2px)
+//   +hidden()
+//   &__item
+//     +mb($medium)
+//     +min-md()
+//       +mb(40px)
+//   &__img
+//     +hidden()
+//     img
+//       +block()
+//       +w()
+//       +h(auto)
+//   &__title
+//     +my()
+//   &.--channel
+//     +x-center()
+//     +ai(stretch)
+//     +shadow($shadow-dark)
+//     +trans(box-shadow 300ms 50ms)
+//     .card__img
+//       +sh(0)
+//       img
+//         +w(auto)
+//         +h(100%)
+//         +trans($trans-scale)
+//     .card__content
+//       +gr(1)
+//       +px($medium)
+//       +py($base * 1.25)
+//     .card__title
+//       +mb($small)
+//
+//   &.--portfolio
+//     +flex(column-reverse)
+//     +shadow($shadow-base)
+//     +trans(box-shadow 200ms 50ms)
+//     .card__img
+//       +w()
+//       +hidden()
+//       img
+//         +trans($trans-scale)
+//       border-bottom: $border-mint
+//     .card__title
+//       +py($medium)
+//       +ta()
+//     +hover()
+//       +shadow($shadow-base-hover)
+//       .card__img img
+//         transform: $scale
+
+
+// .card__item
+//   #portfolio &
+//     +max-sm()
+//       +px($large)
+//   #network &
+//     +max-sm()
+//       +px($medium)

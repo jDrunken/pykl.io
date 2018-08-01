@@ -1,0 +1,65 @@
+.intro
+  +bgc($snow-1)
+  &__header
+    @extend .row
+    +jc()
+  &__title
+    @extend .col-sm-12, .col-md-8, %text-large, %text-title
+    +max-w(680px)
+    +px($gutter)
+    +ta()
+  &__content
+    +bgc($white)
+    +py(80px)
+    +min-lg()
+      +py(100px)
+
+  > .container
+    +mt()
+    +py(80px)
+    +min-lg()
+      +py(100px)
+
+.intro
+  &__list
+    @extend .row
+    +min-md()
+      +ai(stretch)
+  &__item
+    @extend .col-sm-12, .col-md-4
+    +max-md()
+      +mb($extra-large)
+    +before()
+      +block()
+      +w(120px)
+      +h(120px)
+      +mb($medium)
+      +mx(auto)
+      +bgr()
+      +bgs(contain)
+      +trans(transform 280ms)
+      +min-lg()
+        +mb($large)
+    +nth(1)
+      +before()
+        +bgi('../../static/images/img-testimonial-1.svg')
+    +nth(2)
+      +before()
+        +bgi('../../static/images/img-testimonial-2.svg')
+    +nth(3)
+      +before()
+        +bgi('../../static/images/img-testimonial-3.svg')
+    +min-lg()
+      +before()
+        +block()
+        +w(144px)
+        +h(144px)
+    +hover()
+      +before()
+        transform: scale(1.065)
+  &__text
+    @extend %text-small, %text-body
+    +px(40px)
+    +ta()
+    +min-sm()
+      +px($gutter)

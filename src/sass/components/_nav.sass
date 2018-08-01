@@ -1,0 +1,126 @@
+%link
+  +y-center()
+  +h($mb-i18n)
+  +px($gutter)
+  +ff(ff('en') !important)
+  +trans(color 1000ms)
+  white-space: nowrap
+  +max-md()
+    +px(30px)
+    +py(20px)
+    +c($white)
+  +min-md()
+    +px($base)
+
+%link-active
+  +fw(700)
+  +c($mint-2)
+  &.pykl--stick
+    +c($dark)
+
+%gnb-link
+  @extend %ui-base
+  +c($white)
+  +min-md()
+    +fs($fs-small)
+    .pykl--stick &
+      +c($smoke-2)
+
+%lnb-link
+  @extend %ui-small
+  +c($white)
+  +min-md()
+    +c($white)
+    .pykl--stick &
+      +c($smoke-2)
+
+%lnb-active
+  @extend %ui-small
+  +c($mint-2)
+  +fw('bold')
+  .pykl--stick &
+    &.active
+      +c($dark)
+
+
+.gnb
+  a
+    @extend %link, %gnb-link
+  +max-md()
+    +abs()
+    +t()
+    +r()
+    +w($mb-width)
+    +max-w($mb-max-width)
+    +pt($mb-height + 5px)
+    +h(100vh)
+    +jc(flex-end)
+    +bgc($dark)
+    &.show
+      +r(0)
+    .button--icon
+      +flex()
+      +z(1)
+    .button--icon.--close
+      +abs()
+      +t(5px)
+      +r()
+      +z(100)
+  +min-md()
+    +rel()
+    +y-center()
+    +pr($base)
+    +pt()
+    +after()
+      +pos-y-center()
+      +r()
+      +w(1px)
+      +h(1rem)
+      +bgc($snow-3)
+  +min-lg()
+    +pr($base)
+
+.i18n
+  +y-center()
+  a
+    @extend %link, %lnb-link
+  +max-md()
+    +abs()
+    +t(5px)
+    +r()
+    +w($mb-width)
+    +max-w($mb-max-width)
+  +min-md()
+    +pl($base)
+    .ko
+      +pr()
+  +min-lg()
+    +pl($medium)
+  html[lang='en'] &
+    .en
+      @extend %link, %lnb-active
+  html[lang='ko'] &
+    .ko
+      @extend %link, %lnb-active
+      +pr()
+
+
+#nav
+  +w()
+  +h($dk-height)
+  +y-center()
+  +l()
+  +max-md()
+    +fix()
+    +z(1)
+    +t()
+    +l(100%)
+    +w()
+    +h(100vh)
+    +trans(left 500ms)
+    &.show
+      +l(0)
+  +min-md()
+    +jc(flex-end)
+    .button--icon
+      +none()
