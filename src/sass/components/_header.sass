@@ -7,14 +7,15 @@
   +h($mb-height)
   +trans(background-color 200ms)
   .pykl
-    +inblock()
-    +w(74px)
-    +h($mb-height)
-    +my()
-    +ml(-1px)
-    +bg('../../static/images/logo-pykl.svg')
-    +bgs(contain)
-    text-indent: -9999px
+    a
+      +inblock()
+      +w(74px)
+      +h($mb-height)
+      +my()
+      +ml(-1px)
+      +bg('../../static/images/logo-pykl.svg')
+      +bgs(contain)
+      text-indent: -9999px
   .button--icon.--menu
     +rel()
     +l(13px)
@@ -39,8 +40,9 @@
   +min-md()
     +h($dk-height)
     .pykl
-      +w(130px)
-      +h($dk-height)
+      a
+        +w(130px)
+        +h($dk-height)
     .button--icon
       +none()
 
