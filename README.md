@@ -3,16 +3,26 @@
 gulp.js 기반의 task running으로 pykl.io 사이트를 building 합니다.
 
 ## 환경설정
+먼저 전역으로 gulp 설치합니다.
 > npm install gulp -g
-전역으로 gulp 설치가 완료되고 나면 사전 정의된 각종 플러그인을 설치합니다.
+
+전역으로 gulp 설치가 완료되면 사전 정의된 각종 플러그인을 설치합니다.
 > npm install --save
-설치가 마무리되면 아래처럼 명령어를 실행합니다.
-명령어는 두가지 입니다.
-> gulp local
-# local에서 사이트의 모습을 확인할 수 있습니다. 수정사항은 실시간으로 반영됩니다.
 
+## Sass
+Sass를 실행시키기 위한 명령어입니다.
+> gulp sass
+
+Sass compile을 watch하기 위해서는 아래의 명령어를 실행합니다.
+> gulp sass:watch
+
+## Build
+아래의 명령어를 실행시키면 `build/` 디렉토리에서 최종 결과물을 확인하실 수 있습니다.
+> gulp build
+
+## Deploy
+gh-pages에 수정된 사항을 push합니다. github page 배포용입니다.
 > gulp deploy
-# gh-pages에 수정된 사항을 push합니다. github page 배포용입니다.
-## 실행 URL
 
-주력 브라우저에서 <http://localhost:7080> 주소를 실행시킵니다.
+## Locales
+컨텐츠 내용 수정이 필요할 시`locales/`에 해당 언어의 `json` 파일의 내용을 수정합니다.
