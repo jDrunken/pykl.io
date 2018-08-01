@@ -18,11 +18,11 @@ Sass compile을 watch하기 위해서는 아래의 명령어를 실행합니다.
 
 ## Build
 아래의 명령어를 실행시키면 `build/` 디렉토리에서 최종 결과물을 확인하실 수 있습니다.
-> gulp build
+> npm run build
 
 ## Deploy
 gh-pages에 수정된 사항을 push합니다. github page 배포용입니다.
-> gulp deploy
+> npm run deploy
 
 ## Locales
 컨텐츠 내용 수정이 필요할 시`locales/`에 해당 언어의 `json` 파일의 내용을 수정합니다.
