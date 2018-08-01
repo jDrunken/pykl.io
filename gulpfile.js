@@ -2,8 +2,9 @@ const gulp = require('gulp')
 var sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const minify = require('gulp-minify')
+const imagemin = require('gulp-imagemin')
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
   return gulp.src('./src/sass/**/*.sass')
     .pipe(sass({
       outputStyle: 'compressed',
@@ -12,11 +13,11 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./src/static/css'))
 });
 
-gulp.task('sass:watch', function () {
+gulp.task('sass:watch', () => {
   gulp.watch('./src/sass/**/*.sass', ['sass']);
 });
 
-gulp.task('autoprefix', function () {
+gulp.task('autoprefix', () => {
   return gulp.src('./src/static/css/styles.css')
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
@@ -25,10 +26,29 @@ gulp.task('autoprefix', function () {
     .pipe(gulp.dest('./build/static/css'))
 })
 
-gulp.task('js:minify', function() {
+gulp.task('js:minify', () => {
   gulp.src(['src/static/js/*.js'])
     .pipe(minify({
       noSource: true,
     }))
     .pipe(gulp.dest('./build/static/js'))
-});
+  })
+
+gulp.task('fonts', () => {
+  return gulp.src('src/static/fonts/*.*')
+    .pipe(gulp.dest('./build/static/fonts'))
+})
+
+gulp.task('img:minify', () => {
+  return gulp.src('src/static/images/**/*')
+    .pipe(imagemin([
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+          plugins: [
+              {removeViewBox: true},
+          ]
+      })
+    ]))
+    .pipe(gulp.dest('./build/static/images'))
+  })
