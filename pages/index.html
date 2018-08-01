@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title data-t="head.title"></title>
+  <link rel="shortcut icon" type="image/x-icon" href="static/images/pykl-favicon.ico">
   <link rel="stylesheet" href="static/css/normalize.css">
   <link rel="stylesheet" href="static/css/webfont.css">
   <link rel="stylesheet" href="static/css/styles.css">
-  <script src="static/js/webfont.js"></script>
+  <script src="static/js/webfont-min.js"></script>
 </head>
 <body>
 <header id="header"
@@ -884,34 +885,6 @@
 </footer>
 
 <script src="static/js/scroll-min.js"></script>
-<script src="static/js/headhesive-min.js"></script>
-<script>
-  var options = {
-    offset: '#trigger',
-    offsetSide: 'top',
-    classes: {
-      clone: 'pykl--clone',
-      stick: 'pykl--stick',
-      unstick: 'pykl--unstick'
-    }
-  };
-
-  var header = new Headhesive('#header', options);
-  var closeButton = document.getElementById('close-btn');
-  var menuButtonList = document.querySelectorAll('.--menu');
-  var nav = document.getElementById('nav');
-
-  function handleNav () {
-    nav.classList.toggle('show');
-  }
-
-  menuButtonList = Array.from ? Array.from(menuButtonList) : Array.prototype.slice.call(menuButtonList);
-  menuButtonList.forEach((item, index) => {
-    item.addEventListener('click', handleNav);
-  })
-  closeButton.addEventListener('click', handleNav);
-
-
-</script>
+<script src="static/js/script-min.js"></script>
 </body>
 </html>

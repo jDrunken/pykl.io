@@ -20,21 +20,11 @@
     +rel()
     +l(13px)
 
-  &.pykl--clone
-    +bgc($dark)
-    z-index: 100
-    [class^='pykl--']
-      +trans(background-color 200ms)
-    &:first-child
-      +z(200)
+  +bgc($dark)
 
   &.pykl--stick
     +bgc($white !important)
     +shadow($shadow-header)
-    z-index: 200
-
-  &.pykl--unstick
-    z-index: 200
 
 .pykl-header
   +min-md()
@@ -45,8 +35,3 @@
         +h($dk-height)
     .button--icon
       +none()
-
-
-
-
-
