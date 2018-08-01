@@ -44,11 +44,6 @@ gulp.task('img:minify', () => {
     .pipe(imagemin([
       imagemin.jpegtran({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 5 }),
-      imagemin.svgo({
-          plugins: [
-              {removeViewBox: true},
-          ]
-      })
     ]))
     .pipe(gulp.dest('./build/static/images'))
   })
