@@ -1,5 +1,4 @@
 echo "\n\n\nInitializing build/"
-rm -Rf build/
 echo "\n\n\nGenerate static pages"
 static-i18n -l en -i en -i ko -o build --outputDefault __lng__/__file__ pages/
 echo "\n----- Done"
