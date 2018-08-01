@@ -1,8 +1,9 @@
 const gulp = require('gulp')
-var sass = require('gulp-sass')
+const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const minify = require('gulp-minify')
 const imagemin = require('gulp-imagemin')
+const connect = require('gulp-connect')
 
 gulp.task('sass', () => {
   return gulp.src('./src/sass/**/*.sass')
@@ -29,7 +30,7 @@ gulp.task('autoprefix', () => {
 gulp.task('js:minify', () => {
   gulp.src(['src/static/js/*.js'])
     .pipe(minify({
-      noSource: true,
+      noSource: true
     }))
     .pipe(gulp.dest('./build/static/js'))
   })
@@ -46,4 +47,15 @@ gulp.task('img:minify', () => {
       imagemin.optipng({ optimizationLevel: 5 }),
     ]))
     .pipe(gulp.dest('./build/static/images'))
-  })
+})
+
+gulp.task('connect', () => {
+	connect.server({
+		root: './build',
+		port : 3030,
+		livereload: true,
+        directory:true,
+        host:'0.0.0.0'
+	});
+});
+
