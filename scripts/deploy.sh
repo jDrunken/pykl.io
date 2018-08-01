@@ -12,4 +12,3 @@ cd build
 git add -A
 git commit -a -m "Deployed at $(date)"
 git push origin gh-pages
-
