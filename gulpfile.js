@@ -11,11 +11,11 @@ gulp.task('sass', () => {
       precision: 8,
     }).on('error', sass.logError))
     .pipe(gulp.dest('./src/static/css'))
-});
+})
 
 gulp.task('sass:watch', () => {
-  gulp.watch('./src/sass/**/*.sass', ['sass']);
-});
+  gulp.watch('./src/sass/**/*.sass', ['sass'])
+})
 
 gulp.task('autoprefix', () => {
   return gulp.src('./src/static/css/styles.css')
