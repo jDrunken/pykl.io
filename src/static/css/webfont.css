@@ -32,23 +32,5 @@
 }
 
 
-/* SpoqaHanSans */
-@font-face {
-  font-family: 'SpoqaHanSans';
-  font-style: normal;
-  font-weight: normal;
-  src: local('SpoqaHanSansRegular'),
-    url('../fonts/SpoqaHanSansRegular.ttf') format('ttf'),
-    url('../fonts/SpoqaHanSansRegular.woff') format('woff'),
-    url('../fonts/SpoqaHanSansRegular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'SpoqaHanSans';
-  font-style: normal;
-  font-weight: bold;
-  src: local('SpoqaHanSansBold'),
-    url('../fonts/SpoqaHanSansBold.ttf') format('ttf'),
-    url('../fonts/SpoqaHanSansBold.woff') format('woff')
-    url('../fonts/SpoqaHanSansBold.woff2') format('woff2');
-}
+/* Google webfonr API로 대체 */
+@import '//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css';

@@ -48,9 +48,9 @@
         "url": "https://www.youtube.com/channel/UCZWvx1PFmcTLiGJX3FTcCBA"
       },
       "card3": {
-        "title": "Bit-Boy 쎄시봉",
-        "subscriber": "11,415",
-        "url": "https://www.youtube.com/channel/UCCho7n8zvINvLZgZI3osFGQ"
+        "title": "BLOCK INFO",
+        "subscriber": "18,581",
+        "url": "https://www.youtube.com/channel/UCiqTJXq5QFw5lNnUueqBqQQ"
       },
       "card4": {
         "title": "YES MEN",
@@ -58,52 +58,52 @@
         "url": "https://www.youtube.com/channel/UCsrenJyjKnZDHnuNpQLgPUA"
       },
       "card5": {
+        "title": "Bit-Boy 쎄시봉",
+        "subscriber": "11,415",
+        "url": "https://www.youtube.com/channel/UCCho7n8zvINvLZgZI3osFGQ"
+      },
+      "card6": {
         "title": "CONAM TV",
         "subscriber": "2,339",
         "url": "https://www.youtube.com/c/conamtv"
-      },
-      "card6": {
-        "title": "BLOCK INFO",
-        "subscriber": "18,581",
-        "url": "https://www.youtube.com/channel/UCiqTJXq5QFw5lNnUueqBqQQ"
       }
     },
     "steemit": {
       "follower": "Followers",
       "card1": {
+        "title": "@virus707",
+        "follower": "6,155",
+        "url": "https://steemit.com/@virus707"
+      },
+      "card2": {
+        "title": "@kim066",
+        "follower": "5,018",
+        "url": "https://steemit.com/@kim066"
+      },
+      "card3": {
         "title": "@indend007",
         "follower": "3,306",
         "url": "https://steemit.com/@indend007"
       },
-      "card2": {
-        "title": "@musicholic  ",
+      "card4": {
+        "title": "@musicholic",
         "follower": "2,854",
         "url": "https://steemit.com/@musicholic"
       },
-      "card3": {
-        "title": "@boostyou ",
-        "follower": "1,925",
-        "url": "https://steemit.com/@boostyou"
-      },
-      "card4": {
-        "title": "@kim066 ",
-        "follower": "5,018",
-        "url": "https://steemit.com/@kim066"
-      },
       "card5": {
-        "title": "@segyepark ",
+        "title": "@segyepark",
         "follower": "2,088",
         "url": "https://steemit.com/@segyepark"
       },
       "card6": {
+        "title": "@boostyou",
+        "follower": "1,925",
+        "url": "https://steemit.com/@boostyou"
+      },
+      "card7": {
         "title": "@journalist.yoo",
         "follower": "501",
         "url": "https://steemit.com/@journalist.yoo"
-      },
-      "card7": {
-        "title": "@virus707",
-        "follower": "6,155",
-        "url": "https://steemit.com/@virus707"
       }
     }
   },

@@ -4,10 +4,11 @@
     @extend .row
     +jc()
   &__title
-    @extend .col-sm-12, .col-md-8, %text-large, %text-title
+    @extend .col-sm-12, .col-md-8, %text-extra-large, %text-title
     +max-w(680px)
     +px($gutter)
     +ta()
+    
   &__content
     +bgc($white)
     +py(80px)
@@ -18,7 +19,7 @@
     +mt()
     +py(80px)
     +min-lg()
-      +py(100px)
+      +py(120px)
 
 .intro
   &__list
