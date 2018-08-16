@@ -1,11 +1,10 @@
 .hero
-  +rel()
   +flex(column)
   +jc(flex-end)
   +w()
   +h(100vh)
   @media screen and (min-height: 800px)
-    +h(auto)
+    +h(87vh)
   &__pykl
     +rel()
     +z(1)
@@ -79,7 +78,7 @@
 
 .hero
   +min-md()
-    +max-h(540px)
+    +max-h(560px)
     +jc()
     +ai()
     flex-direction: row
@@ -140,41 +139,3 @@
         +px($gutter * 2)
     &__text
       @extend %ui-small, %ui-smoke-2
-
-.hero
-  &::before,
-  &::after
-    +z(0)
-    +abs()
-    +bg('../../static/images/img-squares.svg')
-    +o(.2)
-    +bgs(contain)
-    content: ''
-  +before()
-    +t($extra-large)
-    +l(-45px)
-    +w(210px)
-    +h(200px)
-  +after()
-    +b()
-    +r(-14%)
-    +w(208px)
-    +h(210px)
-  +min-md()
-    +before()
-      +t(10px)
-      +l(-$extra-large)
-      +w(258px)
-      +h(223px)
-    +after()
-      +w(266px)
-      +h(211px)
-  +min-lg()
-    +before()
-      +l()
-      +w(284px)
-      +h(246px)
-    +after()
-      +w(293px)
-      +h(233px)
-

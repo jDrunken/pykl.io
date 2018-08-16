@@ -5,7 +5,7 @@
   +w()
   +px($gutter)
   &:not(:last-child)
-    +mb(40px)
+    +mb(30px)
   +min-lg()
     +w(20%)
 
@@ -16,16 +16,18 @@
   &__wrap
     +flex(column)
     +sh(0)
-    +w(40%)
+    +w(55%)
     .process__title
       @extend %text-title, %text-small
+      +pt(8px)
+      +fs(14px)
       +mb($small)
       order: 2
       html[lang="en"] &
         @extend %text-base
     .process__text
       @extend %text-caption
-      +fs(13px)
+      +fs(12px)
       +lh(1.461538462)
       order: 3
     p[lang='en']
@@ -42,10 +44,10 @@
     +rel()
     +z(1)
     +flex()
-    +w(50%)
+    +w(45%)
     +ai()
     +bgr()
-    +bgp()
+    +bgp(top center)
     +trans(transform 200ms ease-in)
   +hover()
     +before()
@@ -72,8 +74,8 @@
   +before()
     +abs()
     +z(0)
-    +l(31%)
-    +t(40px)
+    +l(25%)
+    +t(20px)
     +b(50px)
     +w(1px)
     +bgc($dark)
