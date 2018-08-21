@@ -74,27 +74,6 @@
       "follower": "팔로워",
       "card1": {
         "title": "@virus707",
-        "follower": "6,155",
-        "url": "https://steemit.com/@virus707"
-      },
-      "card2": {
-        "title": "@kim066",
-        "follower": "5,018",
-        "url": "https://steemit.com/@kim066"
-      },
-      "card3": {
-        "title": "@indend007",
-        "follower": "3,306",
-        "url": "https://steemit.com/@indend007"
-      },
-      "card4": {
-        "title": "@musicholic",
-        "follower": "2,854",
-        "url": "https://steemit.com/@musicholic"
-      },
-      "card5": {
-        "title": "@segyepark",
-        "follower": "2,088",
         "url": "https://steemit.com/@segyepark"
       },
       "card6": {
@@ -145,6 +124,10 @@
     "card9": {
       "title": "Greymess",
       "url": "https://greymass.com/"
+    },
+    "card10": {
+      "title": "EOS Authority",
+      "url": "https://eosauthority.com/"
     }
   },
   "process": {
