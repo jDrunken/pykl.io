@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Circular Std Book'),
-    url('../fonts/CircularStd-Book.woff') format('woff');
+    url('./CircularStd-Book.woff') format('woff');
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-style: italic;
   font-weight: normal;
   src: local('Circular Std Book Italic'),
-    url('../fonts/CircularStd-BookItalic.woff') format('woff');
+    url('./CircularStd-BookItalic.woff') format('woff');
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: bold;
   src: local('Circular Std Bold'),
-    url('../fonts/CircularStd-Bold.woff') format('woff');
+    url('./CircularStd-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -28,7 +28,7 @@
   font-style: italic;
   font-weight: bold;
   src: local('Circular Std Bold Italic'),
-    url('../fonts/CircularStd-BoldItalic.woff') format('woff');
+    url('./CircularStd-BoldItalic.woff') format('woff');
 }
 
 

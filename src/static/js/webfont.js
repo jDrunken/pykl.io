@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  var cssHrefNormal = '../static/css/webfont.css';
+  var cssHrefNormal = '../webfont.css';
 
   function on(el, ev, callback) {
     if (el.addEventListener) {
