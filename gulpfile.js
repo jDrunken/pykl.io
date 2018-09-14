@@ -91,7 +91,7 @@ gulp.task('img:minify', () => {
 			imagemin.jpegtran({ progressive: true }),
 			imagemin.optipng({ optimizationLevel: 5 }),
 		]))
-		.pipe(gulp.dest('./build'))
+		.pipe(gulp.dest('./build/static/images'))
 })
 
 gulp.task('connect', () => {
@@ -165,7 +165,7 @@ gulp.task('watch', (callback) => {
 // img:minify
 // --------------------------------------------------------------------------------
 gulp.task('local',function () {
-	return runSequence('clean',['index.html','translate','sass:sourcemap','css:copy','conf:copy','js:minify','fonts'],['connect','watch']);
+	return runSequence('clean',['index.html','translate','sass:sourcemap','css:copy','conf:copy','js:minify','fonts','img:minify'],['connect','watch']);
 })
 
 
