@@ -74,7 +74,7 @@ gulp.task('fonts', () => {
 })
 
 gulp.task('conf:copy', () => {
-	return gulp.src('src/conf/*')
+	return gulp.src('src//static/conf/*')
 		.pipe(gulp.dest('./build'))
 		.pipe(livereload())
 })

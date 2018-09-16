@@ -29,9 +29,9 @@
   "intro": {
     "heading": "Pykl Network is the most influential Crypto Marketing Network in South Korea with a pool of cryptocurrency content creators.",
     "text": {
-      "item1": "WE UTILIZE a pool of content creators from Youtube, Steemit, Afreeca, and blog (over 880,000 subscribers)",
-      "item2": "WE RECOMMEND an appropriate way to brand and to advertise in South Korea based on the characteristic of a project",
-      "item3": "WE COLLABORATE with numerous of marketing companies to provide a marketing strategy for the events such as ICO pre-sale, exchange listing, mainnet launch, and conferences"
+      "item1": "WE UTILIZE a pool of content creators from <strong>Youtube</strong>, <strong>Steemit</strong>, <strong>Afreeca</strong>, and <strong>Blog</strong> (over 880,000 subscribers)",
+      "item2": "WE OFFER branding and advertising solutions in South Korea optimally tailored for your projects",
+      "item3": "WE COLLABORATE with numerous marketing companies to provide a marketing strategy for the events such as ICO pre-sale, exchange listing, mainnet launch, and conferences"
     }
   },
   "network": {
@@ -101,9 +101,24 @@
         "url": "https://steemit.com/@boostyou"
       },
       "card7": {
+        "title": "@donekim",
+        "follower": "1,184",
+        "url": "https://steemit.com/@donekim"
+      },
+      "card8": {
+        "title": "@rothbardianism",
+        "follower": "1,014",
+        "url": "https://steemit.com/@rothbardianism"
+      },
+      "card9": {
         "title": "@journalist.yoo",
         "follower": "501",
         "url": "https://steemit.com/@journalist.yoo"
+      },
+      "card10": {
+        "title": "@shimsing",
+        "follower": "455",
+        "url": "https://steemit.com/@shimsing"
       }
     }
   },
@@ -141,12 +156,24 @@
       "url": "https://eosauthority.com/space/"
     },
     "card9": {
-      "title": "Greymess",
+      "title": "Greymass",
       "url": "https://greymass.com/"
     },
     "card10": {
       "title": "EOS Authority",
       "url": "https://eosauthority.com/"
+    },
+    "card11": {
+      "title": "AIRBLOC",
+      "url": "https://airbloc.org"
+    },
+    "card12": {
+      "title": "Carry protocol",
+      "url": "https://carryprotocol.io/"
+    },
+    "card13": {
+      "title": "HorusPay",
+      "url": "https://horuspay.io/"
     }
   },
   "process": {
