@@ -10,7 +10,7 @@ const shell = require('gulp-shell')
 const staticI18n = require('gulp-static-i18n-html')
 const clean = require('del')
 const sourcemaps = require('gulp-sourcemaps')				//source tracking
-const ghpages = require('gulp-gh-pages-will')		        // gulp-gh-pages
+const publish = require('gulp-gh-pages-will')		        // gulp-gh-pages
 
 
 // 빌드 전 청소
