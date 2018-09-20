@@ -158,7 +158,7 @@
       "url": "https://eosauthority.com/space/"
     },
     "card9": {
-      "title": "Greymess",
+      "title": "Greymass",
       "url": "https://greymass.com/"
     },
     "card10": {
@@ -170,11 +170,19 @@
       "url": "https://airbloc.org"
     },
     "card12": {
+<<<<<<< HEAD:locales/ko.json
       "title": "Carry protocal",
       "url": "https://carryprotocol.io/"
     },
     "card13": {
       "title": "HousePay",
+=======
+      "title": "Carry protocol",
+      "url": "https://carryprotocol.io/"
+    },
+    "card13": {
+      "title": "HorusPay",
+>>>>>>> 8e758de6add00b1f4f0bc64ec4837e6e941b9806:src/locales/ko.json
       "url": "https://horuspay.io/"
     }
   },

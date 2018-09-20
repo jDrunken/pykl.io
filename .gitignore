@@ -19,6 +19,7 @@ node_modules/
 
 # Yarn Integrity file
 .yarn-integrity
+.publish
 
 # Editorconfig
 .editorconfig
