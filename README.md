@@ -33,3 +33,13 @@ gh-pages에 수정된 사항을 배포합니다.
 ## Locales  
 
 컨텐츠 내용 수정이 필요할 시 `./src/locales/`의 해당 언어 `json` 파일의 내용을 수정합니다.  
+
+
+## trouble shotting
+
+`ReferenceError: internalBinding is not defined` 이란 에러가 발생할 경우 natives 모듈을 수동으로 업그레이드 해줍니다.
+
+```
+❯ npm install natives@1.1.6
+```
+
