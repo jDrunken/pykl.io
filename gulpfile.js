@@ -168,7 +168,8 @@ gulp.task('local',function () {
 	return runSequence('clean',['index.html','translate','sass:sourcemap','css:copy','conf:copy','js:minify','fonts','img:minify'],['connect','watch']);
 })
 
-
 gulp.task('deploy',function () {
 	return runSequence('clean',['index.html','translate','sass','css:copy','conf:copy','js:minify','fonts','img:minify'],'release')
 })
+
+gulp.task('default',['local']);
