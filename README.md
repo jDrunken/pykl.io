@@ -1,45 +1,69 @@
-# pykl.io static site builder  
+# pykl.io-vue
 
-gulp.js 기반의 task running으로 pykl.io 사이트를 building 합니다.  
-
-
+pykl 사이트를 vue 기반으로 변경중
 
 
-## 환경설정  
-
-전역으로 gulp를 설치합니다.  
-> npm install gulp static-i18n -g  
-
-전역으로 gulp 설치가 완료된 뒤 사전 정의된 플러그인을 설치합니다.  
-> npm install  
-
-
-
-## 실행  
-로컬에서 아웃풋을 실행시키기 위한 명령어입니다.  
-> gulp local  
-
-
-
-## 배포  
-
-gh-pages에 수정된 사항을 배포합니다.  
-> gulp deploy  
-
-
-
-
-
-## Locales  
-
-컨텐츠 내용 수정이 필요할 시 `./src/locales/`의 해당 언어 `json` 파일의 내용을 수정합니다.  
-
-
-## trouble shotting
-
-`ReferenceError: internalBinding is not defined` 이란 에러가 발생할 경우 natives 모듈을 수동으로 업그레이드 해줍니다.
-
+## Project setup
 ```
-❯ npm install natives@1.1.6
+npm install
+npm install -g nodemon
+npm install -g @vue/cli
+npm install -g vue-cli-ghpages
 ```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+
+eslint의 설정은 *package.json* 에 bundle되어 있습니다.
+`window.console`의 사용을 허용해 둔 상태입니다.
+
+```
+npm run lint
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### channel crawler
+
+run
+
+```
+node crawler
+```
+
+or
+
+run for dev (REPL)
+
+```
+npm install -g nodemon
+nodemon ./crawler
+```
+
+## dependancy

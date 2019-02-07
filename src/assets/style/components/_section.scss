@@ -1,0 +1,55 @@
+/** @modules section */
+
+.section {
+    padding-top:80px;
+    padding-bottom:80px;
+    @include min-md {
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+
+    &#network.section {
+        padding-bottom:50px;
+    }
+
+    &#community {
+        padding-top:0;
+    }
+}
+
+.section {
+  &__header {
+    @extend .row;
+
+    @include pb($large);
+    @include min-md {
+      @include pb(40px);
+    }
+  }
+
+  &__title {
+    @extend .col-sm-12, %ui-medium;
+
+    #network &,
+    #community & {
+      @include c($white);
+    }
+  }
+}
+
+#network,
+#community {
+  @include bgc($navy);
+}
+
+#portfolio {
+  @include bgc($snow-1);
+}
+
+#process {
+  @include bgc($white);
+}
+
+#contact {
+  @include bgc($mint-2);
+}

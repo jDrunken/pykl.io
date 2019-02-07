@@ -1,0 +1,71 @@
+# Javascript Node CircleCI 2.0 configuration file for Pykl.io-vue
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:latest
+
+    working_directory: ~/pykl.io-vue
+
+    # environment:
+      # - SOURCE_BRANCH: master
+      # - TARGET_BRANCH: gh-pages
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run:
+          name: npm install
+          command: npm install
+
+      - run: git config user.name $GITHUB_NAME  # GitHubのアカウント情報を設定
+      - run: git config user.email $GITHUB_EMAIL
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name : crawling
+          command : node ./crawler/crawl
+
+      - run:
+          name : build
+          command : npm run build
+
+      - add_ssh_keys:
+          fingerprints:
+              - "09:5a:58:b4:ba:53:bd:84:4a:f9:2a:dd:da:34:a9:1f"
+      - run:
+          name : deploy
+          command : npm run deploy
+
+workflows:
+  version: 2
+  push_and_build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+  daily_build:
+    triggers:
+      - schedule:
+          cron: "20 10,22 * * *"
+          filters :
+            branches:
+              only:
+                - master
+    jobs:
+      - build
+

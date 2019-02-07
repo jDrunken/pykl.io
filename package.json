@@ -1,34 +1,70 @@
 {
-  "name": "pykl",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "pykl.io-vue",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp",
-    "build": "sh scripts/build.sh",
-    "deploy": "sh scripts/deploy.sh"
-  },
-  "keywords": [],
-  "author": "Roh Woohyeon <roh.woohyeon@gmail.com> (https://github.com/rohjs)",
-  "license": "ISC",
-  "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-connect": "^5.5.0",
-    "gulp-gh-pages-will": "^0.5.5",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-minify": "^3.1.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-shell": "^0.6.5",
-    "gulp-static-i18n-html": "^0.3.0",
-    "natives": "^1.1.6",
-    "run-sequence": "^2.2.1",
-    "static-i18n": "^0.2.2"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "dev": "node ./crawler/crawl && npm run serve",
+    "deploy": "gh-pages -d dist -m 'chore: update [skip ci]' -t"
   },
   "dependencies": {
-    "node": "^11.1.0"
-  }
+    "ajv-keywords": "^3.2.0",
+    "find-root": "^1.1.0",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-plugin-unit-mocha": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "cheerio": "^1.0.0-rc.2",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "gh-pages": "^2.0.1",
+    "got": "^9.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-cli-plugin-i18n": "^0.5.1",
+    "vue-scrollto": "^2.13.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": 0,
+      "no-debugger": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
