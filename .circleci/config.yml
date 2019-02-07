@@ -26,9 +26,6 @@ jobs:
           name: npm install
           command: npm install
 
-      - run: git config user.name $GITHUB_NAME  # GitHubのアカウント情報を設定
-      - run: git config user.email $GITHUB_EMAIL
-
       - save_cache:
           paths:
             - node_modules
@@ -44,7 +41,11 @@ jobs:
 
       - add_ssh_keys:
           fingerprints:
-              - "a5:ed:97:e1:c0:85:4d:f5:72:68:dd:b7:d4:fb:25:bb"
+              - "09:5a:58:b4:ba:53:bd:84:4a:f9:2a:dd:da:34:a9:1f"
+
+      - run: git config user.name $GITHUB_NAME  # GitHubのアカウント情報を設定
+      - run: git config user.email $GITHUB_EMAIL
+
       - run:
           name : deploy
           command : npm run deploy
