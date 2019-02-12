@@ -6,7 +6,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:latest
 
-    working_directory: ~/pykl.io-vue
+    working_directory: ~/pykl.io
 
     # environment:
       # - SOURCE_BRANCH: master
